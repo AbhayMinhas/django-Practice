@@ -1,0 +1,34 @@
+# Python compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Environment variables and secrets
+.env
+local_settings.py
+
+# Databases (Especially local SQLite development db)
+*.sqlite3
+
+# Django media and collected static assets
+media/
+static_cdn/
+staticfiles/
+
+# Logs and runtime files
+*.log
+celerybeat-schedule
+
+# OS and IDE files
+.DS_Store
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj

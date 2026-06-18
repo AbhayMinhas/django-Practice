@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>home</h1>
+    {%if tree %}
+    <p>your last selected plant was {{tree}}</p>
+    {%endif%}
+    {%if pot %}
+    <p>your last selected pot colour was {{pot}}</p>
+    {%endif%}
+    <form action="{%url 'pot-colour'%}" method="post">
+        {%csrf_token%}
+        <label for="pineapple">Pineapple tree</label>
+        <input name="tree" type="hidden" value="pineapple tree">
+        <button type="submit">select</button>
+    </form>
+    <form action="{%url 'pot-colour'%}" method="post">
+        {%csrf_token%}
+        <label for="mango">mango tree</label>
+        <input name="tree" type="hidden" value="mango tree">
+        <button type="submit">select</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mark the attendence</h1>
+    <form action="{%url 'is-Marked'%}" method="post">
+    {%csrf_token%}
+    {{data}}
+    <button type="submit">Mark attendence</button>
+    </form>
+</body>
+</html>
